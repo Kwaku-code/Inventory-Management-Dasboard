@@ -1,0 +1,25 @@
+input{
+    width: 70%;
+    height: 2rem;
+    display: block;
+    margin: 1rem auto;
+    margin-top: 5%;
+}
+
+button{
+    width: 20%;
+    margin: 1rem 40%;
+    height: 2rem;
+    background-color: #39A2DB;
+    border: none;
+    border-radius: 1rem;   
+}
+
+button:hover{
+    background-color: #A2DBFA;
+}
+
+.header {
+  grid-area: header;
+  background-color: #648ca6;;
+}

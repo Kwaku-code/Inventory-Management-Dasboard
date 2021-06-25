@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additem.css">
+
+</head>
+<body>
+
+<div class="grid-container">
+    <header class="header">Add Item</header>
+    <aside class="sidenav">
+        <ul class="sidenav__list">
+            <li class="sidenav__list-item"><a href="index.html">Dashboard</a> </li>
+            <li class="sidenav__list-item"><a href="additem.html">Add Item</a></li>
+            <li class="sidenav__list-item"><a href="updateQty.html">Update Quantity</a></li>
+            <li class="sidenav__list-item"><a href="updateItemD.html">Update Item Details</a></li>
+            <li class="sidenav__list-item"> <a href="RemoveItem.html">Remove Item</a></li>
+        </ul>
+       
+    </aside>
+    
+    <main class="main">
+        
+        <div class="main-cards">
+            <form id="addDetails" onsubmit="return false">
+                <input type="text" placeholder="Item Name" class="inputField">
+                <input type="text" placeholder="Description" class="inputField">
+                <input type="category" placeholder="Category" class="inputField">
+                <input type="number" placeholder="Quantity Available" min=0 class="inputField">
+                <button type="submit" id="button1">Submit</button>
+            </form>        
+        </div>
+        
+    </main>
+    
+</div>
+
+
+<script src="js/addItem.js"></script>
+
+</body>
+    
+</html>
