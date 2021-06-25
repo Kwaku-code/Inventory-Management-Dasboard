@@ -1,0 +1,122 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 0px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+
+.main {
+  grid-area: main;
+  height: 100%;
+  background-color: white;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: #648ca6;
+  }
+
+  
+  .sidenav__list {
+    padding: 0;
+    margin-top: 85px;
+    list-style-type: none;
+  }
+
+
+  .sidenav__list-item {
+    padding: 20px 20px 20px 40px;
+    color: #ddd;
+  }
+
+
+  .sidenav__list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+
+
+  .main-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr)); 
+    grid-auto-rows: 94px;
+    grid-gap: 20px;
+    margin: 20px;
+  }
+  
+
+  .overviewcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d3d3;
+  }
+
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #82bef6;
+    margin-bottom: 20px;
+    -webkit-column-break-inside: avoid;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    
+  }
+  
+
+  .sidenav {
+    grid-area: sidenav;
+    background-color: #394263;
+    display: flex;
+    height: 100%;
+  }
+
+
+  .sidenav a {
+      color: black;
+      text-decoration: none;
+  }
+  
+
+  table{
+      width: 100%;
+  }
+
+
+  thead{
+      text-align: center;
+  }
+
+
+  td{
+      text-align: center;
+  }
+
+
+  .redQuantity{
+      background-color: red;
+  }
+
+
+  .orangeQuantity{
+      background-color: orange;
+  }
+
+
+  .greenQuantity{
+      background-color: green;
+  }
